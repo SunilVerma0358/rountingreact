@@ -1,38 +1,13 @@
-.App {
-  text-align: center;
+.rotateglass path {
+    animation: scale-path 3s linear 1;
+    animation-delay: 3s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes scale-path {
+    0% {
+        d: path('M7.11328 173.506C12.3978 175.96 27.6097 179.621 43.9162 174.639C64.2994 168.411 74.491 157.653 86.3812 163.881C95.8933 168.864 104.877 171.619 107.897 172.374C107.897 172.374 102.801 194.456 94.308 206.346C83.3891 221.632 73.9248 236.125 58.6374 238.053C53.2202 238.736 49.1189 237.544 45.6509 235.222L24.0993 210.875C11.0767 193.89 7.11328 173.506 7.11328 173.506Z');
+    }
+    100% {
+        d: path('M1 80.0593C6.97753 86.0451 24.1843 94.978 42.6292 82.8221C65.6854 67.6273 77.2135 41.3817 90.6629 56.5766C101.422 68.7324 111.584 75.4549 115 77.2966C115 77.2966 109.236 131.169 99.6292 160.177C87.2784 197.472 76.573 232.829 59.2809 237.533C53.1533 239.2 48.5141 236.292 44.5914 230.626L20.2135 171.228C5.48315 129.788 1 80.0593 1 80.0593Z');
+    }
 }
